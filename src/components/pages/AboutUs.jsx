@@ -1,23 +1,23 @@
-export const AboutUs = () => {
+export const Dashboard = () => {
   return (
-    <div className="home">
+    <div className="dashboard">
       <h1>Dashboard</h1>
     </div>
   );
 };
 
-export const OurAim = () => {
+export const Sales = () => {
   return (
-    <div className="home">
-      <h1>FIDELTA Aim</h1>
+    <div className="sale">
+      <h1>FIDELTA Sales</h1>
     </div>
   );
 };
 
-export const OurVision = () => {
+export const Catalogue = () => {
   return (
-    <div className="home">
-      <h1>FIDELTA Vision</h1>
+    <div className="catalogue">
+      <h1>FIDELTA Catalogue</h1>
     </div>
   );
 };

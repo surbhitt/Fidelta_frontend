@@ -1,9 +1,9 @@
-const Contact = () => {
+const Store = () => {
   return (
-    <div className="contact">
-      <h1>FIDELTA Contact us</h1>
+    <div className="store">
+      <h1>FIDELTA Store</h1>
     </div>
   );
 };
 
-export default Contact;
+export default Store;

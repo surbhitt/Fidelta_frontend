@@ -1,7 +1,7 @@
 export const Events = () => {
   return (
     <div className="events">
-      <h1>FIDELTA Events</h1>
+      <h1>FIDELTA System</h1>
     </div>
   );
 };

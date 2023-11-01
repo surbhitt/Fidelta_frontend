@@ -4,11 +4,15 @@
   margin: 0;
   padding: 0;
 }
-.home,
-.services,
-.reports,
-.contact,
-.events,
+.dashboard,
+.marketing,
+.store,
+.customer,
+.system,
+.service,
+.report,
+.sale,
+.catalogue,
 .support {
   display: flex;
   margin-left: 260px;

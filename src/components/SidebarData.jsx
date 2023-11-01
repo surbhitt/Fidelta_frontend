@@ -10,62 +10,62 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Our Aim',
-        path: '/about-us/aim',
+        title: 'Sales',
+        path: '/dashboard/sales',
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: 'Our Vision',
-        path: '/about-us/vision',
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-  {
-    title: 'Services',
-    path: '/services',
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-
-    subNav: [
-      {
-        title: 'Service 1',
-        path: '/services/services1',
-        icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav',
-      },
-      {
-        title: 'Service 2',
-        path: '/services/services2',
-        icon: <IoIcons.IoIosPaper />,
-        cName: 'sub-nav',
-      },
-      {
-        title: 'Service 3',
-        path: '/services/services3',
+        title: 'Catalogue',
+        path: '/dashboard/catalogue',
         icon: <IoIcons.IoIosPaper />,
       },
     ],
   },
   {
-    title: 'Contact',
-    path: '/contact',
+    title: 'Customers',
+    path: '/customers',
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: 'Marketing',
+        path: '/customers/marketing',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav',
+      },
+      {
+        title: 'Service',
+        path: '/customers/service',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'sub-nav',
+      },
+      {
+        title: 'Reports',
+        path: '/customers/reports',
+        icon: <IoIcons.IoIosPaper />,
+      },
+    ],
   },
   {
-    title: 'Events',
-    path: '/events',
+    title: 'Stores',
+    path: '/store',
+  },
+  {
+    title: 'System',
+    path: '/system',
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
 
     subNav: [
       {
-        title: 'Event 1',
+        title: '...',
         path: '/events/events1',
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: 'Event 2',
+        title: '...',
         path: '/events/events2',
         icon: <IoIcons.IoIosPaper />,
       },
