@@ -5,6 +5,9 @@
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'content': ['Montserrat', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],

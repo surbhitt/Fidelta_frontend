@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import { SidebarData } from './SidebarData';
-import SubMenu from './SubMenu';
+import { FaChartPie } from "react-icons/fa6";
+import { MdOutlineDashboard } from "react-icons/md";
+import { NavLink, useLocation} from 'react-router-dom';
+
 
 const SidebarNav = styled.nav`
   background: #15171c;
@@ -10,13 +12,17 @@ const SidebarNav = styled.nav`
   top: 0;
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
 `;
+const SidebarData = [
+  {title: 'Analytics', path: 'analytics',icon:< FaChartPie className='text-white'/> },
+  {title: 'Dashboard', path: 'dashboard',icon:<MdOutlineDashboard className='text-white'/> },
+  // {title: 'Dashboard', icon: },
+  // {title: 'Dashboard', icon: },
 
-const SidebarWrap = styled.div`
-  width: 100%;
-`;
-
+]
 const Sidebar = () => {
 
+  const path = useLocation()
+  
   return (
         <SidebarNav sidebar={true} className='flex flex-col'>
           <h1
@@ -25,11 +31,11 @@ const Sidebar = () => {
             <img src='fidelta.png' className="w-20 h-20" />
             FIDELTA
           </h1>
-          <SidebarWrap>
+          <div className='flex flex-col justify-center  mx-auto w-[300px] gap-2'>
             {SidebarData.map((item, index) => {
-              return <SubMenu item={item} key={index} />;
+             return <NavLink  to={`${item.path}`} key={index} className={`${path.pathname === `/${item.path}` ? "bg-zinc-800" : ''} border p-2 text-lg border-gray-500 hover:bg-zinc-800 cursor-pointer rounded-md pl-10 flex gap-4 items-center`}>{item.icon}{item.title}</NavLink>
             })}
-          </SidebarWrap>
+          </div>
         </SidebarNav>
   );
 };
