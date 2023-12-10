@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 import { CandlestickChart } from './CandleStick';
@@ -59,7 +60,7 @@ export default function Analytics() {
 
 function UserTable() {
 
-	return <div className="overflow-x-auto font-content">
+	return <div className="overflow-auto font-content">
   <table className="min-w-full divide-y-2 text-white divide-gray-200 bg-inherit text-sm">
     <thead className="ltr:text-left rtl:text-right">
       <tr>
