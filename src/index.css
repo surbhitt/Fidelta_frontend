@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +6,7 @@
 /* font-family: 'Monoton', sans-serif; */
 
 body {
-  font-family: 'Caveat', cursive;
-}
+font-family: 'Kalnia', serif;}
 
 .title11 {
-  font-family: 'Caveat', cursive;
-}
+font-family: 'Kalnia', serif;}

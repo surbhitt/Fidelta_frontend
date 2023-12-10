@@ -43,7 +43,7 @@ export const Service = () => {
 
 export const Reports = () => {
   return (
-    <div className="report">
+    <div className="report bg-gray-700">
       <div className="w-full">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xl text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
