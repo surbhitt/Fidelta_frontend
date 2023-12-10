@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { FaChartPie } from "react-icons/fa6";
-import { MdOutlineDashboard } from "react-icons/md";
+import { FaChartPie, FaGear, FaRegLifeRing } from "react-icons/fa6";
+import { MdElectricalServices, MdOutlineDashboard } from "react-icons/md";
 import { NavLink, useLocation} from 'react-router-dom';
 
 
@@ -13,10 +13,11 @@ const SidebarNav = styled.nav`
   left: ${({ sidebar }) => (sidebar ? '0' : '-100%')};
 `;
 const SidebarData = [
-  {title: 'Analytics', path: 'analytics',icon:< FaChartPie className='text-white'/> },
-  {title: 'Dashboard', path: 'dashboard',icon:<MdOutlineDashboard className='text-white'/> },
-  // {title: 'Dashboard', icon: },
-  // {title: 'Dashboard', icon: },
+  {title: 'Analytics', path: 'analytics',icon:< FaChartPie /> },
+  {title: 'Dashboard', path: 'dashboard',icon:<MdOutlineDashboard /> },
+  {title: 'Services', path: 'services', icon: <MdElectricalServices /> },
+  {title: 'Support', path: 'support', icon:<FaRegLifeRing />  },
+  {title: 'Settings', path: 'settings', icon:<FaGear /> },
 
 ]
 const Sidebar = () => {
