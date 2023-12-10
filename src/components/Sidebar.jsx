@@ -32,10 +32,12 @@ const Sidebar = () => {
             <img src='fidelta.png' className="w-20 h-20" />
             FIDELTA
           </h1>
-          <div className='flex flex-col justify-center  mx-auto w-[300px] gap-2'>
+          <div className='flex flex-col justify-between h-full mb-10'>
+          <div className='flex flex-col justify-between mx-auto w-[300px] gap-3'>
             {SidebarData.map((item, index) => {
              return <NavLink  to={`${item.path}`} key={index} className={`${path.pathname === `/${item.path}` ? "bg-zinc-800" : ''} border p-2 text-lg border-gray-500 hover:bg-zinc-800 cursor-pointer rounded-md pl-10 flex gap-4 items-center`}>{item.icon}{item.title}</NavLink>
-            })}
+            })}</div>
+            <div className='border m-10 p-2 text-lg border-gray-500 hover:bg-zinc-800 cursor-pointer rounded-md pl-10 flex gap-4 items-center'>Signout</div>
           </div>
         </SidebarNav>
   );
