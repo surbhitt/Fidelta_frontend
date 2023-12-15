@@ -73,7 +73,7 @@ export default function Register(props) {
           console.log(res.token);
           localStorage.setItem('token', res.token);
           localStorage.setItem('user', 'teacher');
-          navigate('/');
+          navigate('/analytics');
         }
       }
     } else {

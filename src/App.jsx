@@ -16,7 +16,7 @@ function App() {
 
       <div className='ml-[400px]'>
         <Routes>
-          <Route path="/" element={<Navigate to="/analytics" />} />
+          <Route path="/" element={<Navigate to="/register" />} />
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/services" element={<Services />} />
