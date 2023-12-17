@@ -88,7 +88,7 @@ export default function Register(props) {
           <form className="space-y-6" action="#" method="POST" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium leading-6 text-white">
-                FirstName
+                Company Name
               </label>
               <div className="mt-2">
                 <input
@@ -106,7 +106,7 @@ export default function Register(props) {
 
             <div>
               <label htmlFor="lastName" className="block text-sm font-medium leading-6 text-white">
-                LastName
+                Type 
               </label>
               <div className="mt-2">
                 <input
@@ -124,7 +124,7 @@ export default function Register(props) {
 
             <div>
               <label htmlFor="t_id" className="block text-sm font-medium leading-6 text-white">
-                Teacher Id:
+                Company Registeration Number
               </label>
               <div className="mt-2">
                 <input
@@ -161,7 +161,7 @@ export default function Register(props) {
 
             <div>
               <label htmlFor="department" className="block text-sm font-medium leading-6 text-white">
-                Department
+                Location
               </label>
               <div className="mt-2">
                 <input
@@ -179,7 +179,7 @@ export default function Register(props) {
 
             <div>
               <label htmlFor="designation" className="block text-sm font-medium leading-6 text-white">
-                Designation
+                Type
               </label>
               <div className="mt-2">
                 <input
